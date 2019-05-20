@@ -12,11 +12,21 @@ private:
 
 	string showRoomName;
 	vector<vehicle> vehicles;
-	int maxCapacity;
+	unsigned int maxCapacity;
 
 
 public:
+	//constructors
 	Showroom();
-	Showroom();
+	Showroom(string name, unsigned int capacity);
+
+	//accessors
+	const vector<vehicle>& GetVehicleList() const {};
+
+	//behavior functions
+	void addVehicle(const Vehicle& v);
+	void showInventory() const;
+
+
 };
 
