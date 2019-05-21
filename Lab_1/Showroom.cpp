@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Showroom.h"
 #include "Vehicle.h"
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -11,6 +12,7 @@ Showroom::Showroom()
 {
 	showRoomName = "Unnamed Showroom";
 	maxCapacity = 0;
+	//vector<Vehicle> vehicles;
 
 }
 
@@ -20,6 +22,8 @@ Showroom::Showroom(string name, unsigned int capacity)
 	showRoomName = name;
 
 	maxCapacity = capacity;
+
+	//vector<Vehicle> vehicles;
 }
 
 //Behvior Functions
