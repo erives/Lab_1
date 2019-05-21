@@ -24,7 +24,7 @@ Showroom::Showroom(string name, unsigned int capacity)
 //Behvior Functions
 void Showroom::addVehicle(const Vehicle& v)
 {
-	if (vehicles.size() < maxCapacity) {
+	if (vehicles.size()< maxCapacity) {
 		vehicles.emplace_back(v);
 	}
 	else {
@@ -35,6 +35,7 @@ void Showroom::addVehicle(const Vehicle& v)
 
 void Showroom::showInventory() const
 {
+	for(int i = 0; i < vehicles.size(); i++ )
 
 }
 
