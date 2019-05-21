@@ -24,8 +24,8 @@ public:
 	const vector<Vehicle>& GetVehicleList() const {};
 
 	//behavior functions
-	void addVehicle(const Vehicle& v);
-	void showInventory() const;
+	void AddVehicle(const Vehicle& v);
+	void ShowInventory() const;
 
 
 };

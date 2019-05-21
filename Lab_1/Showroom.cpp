@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Showroom.h"
+#include "Vehicle.h"
 #include <string>
 #include <vector>
 
@@ -22,7 +23,7 @@ Showroom::Showroom(string name, unsigned int capacity)
 }
 
 //Behvior Functions
-void Showroom::addVehicle(const Vehicle& v)
+void Showroom::AddVehicle(const Vehicle& v)
 {
 	if (vehicles.size()< maxCapacity) {
 		vehicles.emplace_back(v);
@@ -33,7 +34,7 @@ void Showroom::addVehicle(const Vehicle& v)
 	
 }
 
-void Showroom::showInventory() const
+void Showroom::ShowInventory() const
 {
 	for(int i = 0; i < vehicles.size(); i++ )
 
