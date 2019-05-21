@@ -24,10 +24,18 @@ Showroom::Showroom(string name, unsigned int capacity)
 //Behvior Functions
 void Showroom::addVehicle(const Vehicle& v)
 {
+	if (vehicles.size() < maxCapacity) {
+		vehicles.emplace_back(v);
+	}
+	else {
+		cout << "Showroom is full! Cannot add " << v.GetYearMakeModel << endl;
+	}
+	
 }
 
 void Showroom::showInventory() const
 {
+
 }
 
 

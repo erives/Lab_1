@@ -11,7 +11,7 @@ class Showroom
 private:
 
 	string showRoomName;
-	vector<vehicle> vehicles;
+	vector<Vehicle> vehicles;
 	unsigned int maxCapacity;
 
 
@@ -21,7 +21,7 @@ public:
 	Showroom(string name, unsigned int capacity);
 
 	//accessors
-	const vector<vehicle>& GetVehicleList() const {};
+	const vector<Vehicle>& GetVehicleList() const {};
 
 	//behavior functions
 	void addVehicle(const Vehicle& v);
